@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'roboto', sans-serif;
+}
+
+body, html {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 3rem;
+    padding: 20px;
+    background-color: #000;
+    border: none;
+    outline: solid 3px #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 5px #FFF;
+    text-shadow: 0 0 10px #FFF;
+}
+
+.board-grid {
+    display: grid;
+    border: solid #FFF 1px;
+    grid-template-columns: repeat(3, 1FR);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: solid #FFF 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+/* X style when cell clicked */
+.X::after, .X::before {
+    content: '';
+    position: absolute;
+    background-color: #FFF;
+    width: 10px;
+    height: 150px;
+}
+
+.cell::after {
+    transform: rotate(45deg);
+}
+
+.cell::before {
+    transform: rotate(-45deg);
+}
+
+/* O style when cell clicked */
+
+.O::after, .O::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.O::after {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
+
+.O::before {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(16, 93, 180);
+}
+
