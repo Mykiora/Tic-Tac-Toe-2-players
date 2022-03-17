@@ -1,5 +1,5 @@
 # Tic Tac-Toe 2 players
-This is a Tic Tac Toe game made as a practicing project with HTML, CSS and Javascript. Player 1 will always have X's, and player 2 will have O's.
+This is a Tic Tac Toe game made as a practicing project with HTML, CSS and Javascript. Player 1 will always have X's, and player 2 will have O's. Can only be played locally.
 
 ![tictactoe](https://user-images.githubusercontent.com/90429463/158864214-9f6ae52b-a932-416b-a3e9-2f6726e28b8d.jpg)
 
